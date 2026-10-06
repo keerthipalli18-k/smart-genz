@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Health Analytics Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">Health<span>Flow</span></div><div class="profile">SA <b>My Health</b> ▾</div></header>
+<main><div class="welcome"><div><p>GOOD MORNING</p><h1>Your health overview</h1></div><button id="range">This week ▾</button></div>
+<section class="cards">
+<div class="card"><span>❤️ Heart rate</span><strong>72 <small>BPM</small></strong><em>↓ 4% vs last week</em></div>
+<div class="card"><span>😴 Sleep</span><strong>7h 42m</strong><em>↑ 8% vs last week</em></div>
+<div class="card"><span>🚶 Steps</span><strong>8,426</strong><em>84% of daily goal</em></div>
+<div class="card"><span>💧 Hydration</span><strong>1.8 L</strong><em>72% of daily goal</em></div>
+</section>
+<section class="grid"><div class="panel chart"><div class="panel-head"><h2>Activity trend</h2><span>Last 7 days</span></div><div class="bars" id="bars"></div><div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+<div class="panel score"><h2>Wellness score</h2><div class="circle">86<small>/100</small></div><p>You're doing well. Keep your routine consistent.</p><button id="insight">View AI insight</button></div></section>
+<section class="panel"><div class="panel-head"><h2>AI health insight</h2><span class="tag">PERSONALIZED</span></div><div class="insight" id="insightText">Your sleep consistency improved this week. Maintaining a regular bedtime may support your overall wellness routine.</div></section>
+</main><script src="script.js"></script></body></html>

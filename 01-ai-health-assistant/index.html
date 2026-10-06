@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Health Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">✚ <span>CareAI</span></div>
+    <button id="themeBtn">☾</button>
+  </header>
+
+  <main class="app">
+    <aside class="sidebar">
+      <button class="new-chat" id="newChat">＋ New conversation</button>
+      <p class="label">RECENT</p>
+      <div class="history active">Understanding sleep patterns</div>
+      <div class="history">Healthy meal planning</div>
+      <div class="history">Daily wellness check</div>
+      <div class="safety">⚕ <b>Health notice</b><br><small>This interface is a UI demo, not medical advice.</small></div>
+    </aside>
+
+    <section class="chat">
+      <div class="chat-head">
+        <div><h1>How can I help today?</h1><p>Ask a general health and wellness question.</p></div>
+        <span class="status">● Online</span>
+      </div>
+
+      <div class="suggestions">
+        <button>Improve my sleep</button>
+        <button>Healthy meal ideas</button>
+        <button>Explain a health metric</button>
+        <button>Daily wellness tips</button>
+      </div>
+
+      <div id="messages" class="messages">
+        <div class="message ai"><b>CareAI</b><p>Hello! I can help you explore general health and wellness information. What would you like to know?</p></div>
+      </div>
+
+      <form id="chatForm" class="composer">
+        <input id="prompt" placeholder="Ask a health question..." autocomplete="off">
+        <button>Send ➤</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

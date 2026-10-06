@@ -1,0 +1,1 @@
+document.getElementById('review').onclick=()=>alert('Demo: clinical review request sent.');document.getElementById('details').onclick=()=>alert('Top contributing signals: blood pressure stability, activity consistency, sleep pattern, and age.');

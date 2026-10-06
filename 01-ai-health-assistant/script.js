@@ -1,0 +1,7 @@
+const form=document.getElementById('chatForm'), input=document.getElementById('prompt'), messages=document.getElementById('messages');
+const replies=["For general wellness, focus on consistent sleep, balanced nutrition, regular movement, hydration, and stress management.","A simple starting point is to track the habit you want to improve for a week and look for patterns. If symptoms are severe or persistent, consider speaking with a qualified healthcare professional.","I can provide general health information, but I can't diagnose conditions or replace professional medical advice."];
+form.addEventListener('submit',e=>{e.preventDefault();const text=input.value.trim();if(!text)return;add('user',text);input.value='';setTimeout(()=>add('ai',replies[Math.floor(Math.random()*replies.length)]),450)});
+function add(type,text){const d=document.createElement('div');d.className='message '+type;d.innerHTML=type==='ai'?'<b>CareAI</b><p>'+text+'</p>':'<p>'+text+'</p>';messages.appendChild(d);messages.scrollTop=messages.scrollHeight}
+document.querySelectorAll('.suggestions button').forEach(b=>b.onclick=()=>{input.value=b.textContent;input.focus()});
+document.getElementById('newChat').onclick=()=>messages.innerHTML='<div class="message ai"><b>CareAI</b><p>New conversation started. How can I help?</p></div>';
+document.getElementById('themeBtn').onclick=()=>document.body.classList.toggle('dark');
