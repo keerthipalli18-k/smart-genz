@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>SoundWave Festival</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>🎵 SoundWave</h1><nav><a href="#">Home</a><a href="#artists">Artists</a><a href="#events">Events</a></nav><button onclick="showMessage()">Get Tickets</button></header>
+<section class="hero"><p>THE ULTIMATE MUSIC EXPERIENCE</p><h2>Feel the Music.<br>Live the Moment.</h2><button onclick="document.getElementById('events').scrollIntoView()">Explore Events</button></section>
+<section id="artists" class="section"><h2>Featured Artists</h2><div class="grid"><div class="artist">🎤<h3>Nova</h3><p>Pop</p></div><div class="artist">🎸<h3>Echo</h3><p>Rock</p></div><div class="artist">🎧<h3>DJ Pulse</h3><p>Electronic</p></div><div class="artist">🎹<h3>Luna</h3><p>Indie</p></div></div></section>
+<section id="events" class="section"><h2>Upcoming Events</h2><div class="grid"><div class="event"><b>15 NOV</b><h3>SoundWave Mumbai</h3><p>Mumbai • 7:00 PM</p><button onclick="bookEvent('SoundWave Mumbai')">Book Now</button></div><div class="event"><b>22 NOV</b><h3>Neon Nights</h3><p>Bangalore • 8:00 PM</p><button onclick="bookEvent('Neon Nights')">Book Now</button></div><div class="event"><b>30 NOV</b><h3>Summer Beats</h3><p>Chennai • 6:30 PM</p><button onclick="bookEvent('Summer Beats')">Book Now</button></div></div></section>
+<script src="script.js"></script></body></html>

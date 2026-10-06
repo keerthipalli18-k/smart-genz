@@ -1,0 +1,1 @@
+function bookEvent(name){alert("You selected: "+name+"\nTicket booking started!")}function showMessage(){alert("Welcome to SoundWave! 🎵")}

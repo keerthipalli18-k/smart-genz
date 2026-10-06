@@ -1,0 +1,1 @@
+function launchGame(name){alert("Launching "+name+" 🎮")}function changeStatus(){alert("Your gaming status has been updated!")}

@@ -1,0 +1,1 @@
+function watchNow(){alert("Starting The Last Horizon ▶")}function addToList(name){alert(name+" has been removed from your watchlist.")}function toggleTheme(){document.body.classList.toggle("light");alert("Theme switched!")}
