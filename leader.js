@@ -1,1 +1,0 @@
-document.querySelectorAll(".card").forEach(card=>card.addEventListener("click",()=>localStorage.setItem("last-template",card.querySelector("h2")?.textContent||"")));
