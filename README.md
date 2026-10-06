@@ -1,29 +1,21 @@
-# Smart-UI-Entertainment
+# Entertainment Booking UI — Main Leader Project
 
-## UI Template Collection Hackathon
+This package contains the complete three-member UI template collection.
 
-Smart-UI-Entertainment is a collection of modern and responsive entertainment UI templates created for the UI Template Collection Hackathon.
+## Working features
+- Search/filter cards
+- Select an experience
+- Interactive seat selection
+- Live base price, service fee and total
+- Persistent selections with localStorage
+- Dark/light mode
+- Checkout form validation
+- Payment-method selection (demo only)
+- Booking confirmation with booking ID
+- Responsive HTML/CSS/JavaScript pages
+- Main leader landing page linking all members
 
-## Member 1 - Entertainment Applications
+## Important
+This is a front-end hackathon project. Payment is simulated in the browser; no real money is charged and no backend/payment gateway is connected.
 
-Member 1 is responsible for developing the following 4 applications:
-
-1. Movie Discovery
-2. Music Festival
-3. Gamer Arena
-4. OTT Watchlist
-
-## Project Structure
-
-```text
-Smart-UI-Entertainment/
-│
-└── Member_1/
-    │
-    ├── movie-discovery/
-    │
-    ├── music-festival/
-    │
-    ├── gamer-arena/
-    │
-    └── ott-watchlist/
+Open `index.html` first.
