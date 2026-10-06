@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Agent Workflow Builder</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand">⌁ FlowAgent</div><div class="workflow-name"><span>Workflow</span><input id="flowName" value="Customer Support Automation"></div><div class="head-actions"><button>Share</button><button id="run" class="primary">▶ Run workflow</button></div></header>
+<div class="layout">
+<aside class="toolbox"><b>Workflow blocks</b><p>Drag or add a block to your workflow.</p><button class="tool trigger">⚡ Trigger <span>＋</span></button><button class="tool agent">✦ AI Agent <span>＋</span></button><button class="tool condition">◇ Condition <span>＋</span></button><button class="tool approval">✓ Approval <span>＋</span></button><button class="tool action">→ Action <span>＋</span></button><div class="tip"><b>Tip</b><br>Connect blocks from top to bottom to define your automation sequence.</div></aside>
+<main class="canvas">
+<div class="canvas-top"><span>Customer Support Automation</span><span>Last edited just now</span></div>
+<div id="flow" class="flow">
+<div class="node trigger-node"><i>⚡</i><div><b>New support ticket</b><small>Trigger · When a ticket is created</small></div><button>•••</button></div>
+<div class="line"></div>
+<div class="node agent-node"><i>✦</i><div><b>Support Agent</b><small>Classify and understand the ticket</small></div><button>•••</button></div>
+<div class="line"></div>
+<div class="node condition-node"><i>◇</i><div><b>Is urgent?</b><small>Priority equals “high”</small></div><button>•••</button></div>
+<div class="branches"><div><span>YES</span><div class="line"></div><div class="node action-node"><i>→</i><div><b>Notify support team</b><small>Send Slack notification</small></div></div></div><div><span>NO</span><div class="line"></div><div class="node action-node"><i>→</i><div><b>Draft response</b><small>Generate reply for review</small></div></div></div></div>
+</div>
+<div class="minimap"><div class="mini one"></div><div class="mini two"></div><div class="mini three"></div></div>
+</main>
+<aside class="properties"><b>Workflow settings</b><label>Run mode</label><select><option>Automatic</option><option>Manual</option></select><label>Execution limit</label><input value="100"><label>On error</label><select><option>Retry 3 times</option><option>Stop workflow</option></select><hr><b>Workflow status</b><div class="status"><span></span> Active</div><button id="save">Save changes</button></aside>
+</div><div id="toast"></div><script src="script.js"></script></body></html>

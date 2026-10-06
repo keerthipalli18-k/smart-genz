@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo">✦ AgentOS</div>
+  <button class="new-btn">＋ New Agent</button>
+  <p class="label">MAIN</p>
+  <a class="active">▦ Dashboard</a>
+  <a>◉ Agents</a>
+  <a>✓ Tasks</a>
+  <a>⌁ Workflows</a>
+  <a>◷ Activity</a>
+  <p class="label">MANAGE</p>
+  <a>⚙ Settings</a>
+  <div class="user"><div>SB</div><span>Sravya<br><small>Team workspace</small></span></div>
+</aside>
+
+<main>
+<header>
+  <div>
+    <h1>Agent Dashboard</h1>
+    <p>Monitor your AI workforce and automation activity.</p>
+  </div>
+  <div class="actions">
+    <button id="refresh">↻ Refresh</button>
+    <button class="primary">＋ Create agent</button>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="stat"><span>Active agents</span><strong>12</strong><small class="up">↑ 20% this month</small></div>
+  <div class="stat"><span>Running tasks</span><strong id="running">28</strong><small class="up">↑ 8% today</small></div>
+  <div class="stat"><span>Completed</span><strong>1,284</strong><small class="up">↑ 14% this week</small></div>
+  <div class="stat"><span>Success rate</span><strong>96.8%</strong><small>Across all agents</small></div>
+</section>
+
+<section class="grid">
+  <div class="panel agents">
+    <div class="panel-head"><div><h2>Agent performance</h2><p>Latest agent activity</p></div><button>View all</button></div>
+    <div class="agent-row"><div class="agent-icon purple">✦</div><div class="agent-info"><b>Research Agent</b><span>Research & analysis</span></div><span class="status online">● Online</span><div class="metric"><b>98%</b><small>success</small></div></div>
+    <div class="agent-row"><div class="agent-icon blue">↗</div><div class="agent-info"><b>Sales Agent</b><span>Lead qualification</span></div><span class="status online">● Online</span><div class="metric"><b>94%</b><small>success</small></div></div>
+    <div class="agent-row"><div class="agent-icon orange">✎</div><div class="agent-info"><b>Content Agent</b><span>Content generation</span></div><span class="status busy">● Working</span><div class="metric"><b>97%</b><small>success</small></div></div>
+    <div class="agent-row"><div class="agent-icon green">⌁</div><div class="agent-info"><b>Support Agent</b><span>Customer support</span></div><span class="status online">● Online</span><div class="metric"><b>99%</b><small>success</small></div></div>
+  </div>
+
+  <div class="panel chart-panel">
+    <div class="panel-head"><div><h2>Task activity</h2><p>Tasks completed this week</p></div><select><option>Last 7 days</option><option>Last 30 days</option></select></div>
+    <div class="chart">
+      <div class="bars"><i style="height:38%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:72%"></i><i style="height:61%"></i><i style="height:84%"></i><i style="height:93%"></i></div>
+      <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="panel activity">
+  <div class="panel-head"><div><h2>Recent activity</h2><p>Latest events across your agents</p></div><button>View activity</button></div>
+  <div class="event"><span class="dot green"></span><b>Research Agent</b><span>completed “Market research report”</span><time>2 min ago</time></div>
+  <div class="event"><span class="dot blue"></span><b>Sales Agent</b><span>started lead qualification task</span><time>8 min ago</time></div>
+  <div class="event"><span class="dot orange"></span><b>Content Agent</b><span>generated a product announcement</span><time>14 min ago</time></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
