@@ -1,0 +1,33 @@
+/* Member 3 Streaming - Shared Index Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 94%;
+    }
+}
