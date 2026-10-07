@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fintech Loan Planner</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<div class="topbar"><div><span class="eyebrow">LENDWISE</span><h1>Loan Planner</h1></div><button class="ghost" id="save">♡ Save plan</button></div>
+<section class="grid loan-grid"><section class="card calculator"><p class="muted">Personal loan</p><h2>Find a payment that fits.</h2><div class="field"><label>Loan amount <b id="amountOut">$25,000</b></label><input id="amount" type="range" min="5000" max="75000" step="500" value="25000"></div><div class="field"><label>Interest rate <b id="rateOut">8.5%</b></label><input id="rate" type="range" min="3" max="18" step=".1" value="8.5"></div><div class="field"><label>Term <b id="termOut">36 months</b></label><input id="term" type="range" min="12" max="84" step="12" value="36"></div><button class="primary wide" id="apply">Continue with this plan</button></section>
+<section class="card result"><span class="eyebrow">ESTIMATED MONTHLY PAYMENT</span><strong id="payment">$789.53</strong><div class="result-row"><span>Total interest</span><b id="interest">$3,422.98</b></div><div class="result-row"><span>Total repayment</span><b id="repay">$28,422.98</b></div><div class="trust"><span>✓</span><div><b>No hidden fees</b><small>Illustrative calculation for this UI template.</small></div></div></section></section>
+<section class="card"><div class="section-head"><h3>How your payment is split</h3><span class="pill">Year 1</span></div><div class="split"><div><span>Principal</span><b id="principal">68%</b></div><div><span>Interest</span><b id="interestPct">32%</b></div></div><div class="track"><i id="principalBar" style="width:68%"></i></div></section>
+</main><script src="script.js"></script></body></html>
