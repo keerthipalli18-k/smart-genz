@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart GenZ - All Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div>
+            <h1>Smart GenZ</h1>
+            <p>All your applications in one place</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="homePage">
+            <h2>Explore Applications</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search apps..."
+                aria-label="Search applications"
+            >
+
+            <div id="appsContainer" class="apps-grid"></div>
+        </section>
+
+        <section id="appPage" hidden>
+            <div class="app-toolbar">
+                <button id="backButton">← All Apps</button>
+                <a id="newTabButton" href="#" target="_blank"
+                   rel="noopener noreferrer">Open in New Tab ↗</a>
+            </div>
+
+            <h2 id="currentAppTitle">Application</h2>
+
+            <iframe
+                id="appFrame"
+                title="Selected application"
+                loading="lazy"
+                allow="clipboard-read; clipboard-write"
+            ></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart GenZ © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
