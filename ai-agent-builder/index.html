@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>AI Agent Builder</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand">✦ AgentForge</div><div class="steps"><span class="active">1 Configure</span><span>2 Tools</span><span>3 Test</span></div><button id="save">Save agent</button></header>
+<main>
+<div class="title"><div><h1>Create an AI agent</h1><p>Configure the behavior and capabilities of your new agent.</p></div><span class="draft">● Draft</span></div>
+<div class="builder">
+<section class="panel">
+<h2>Agent details</h2>
+<label>Agent name</label><input id="name" value="Research Assistant">
+<label>Description</label><textarea id="desc">An AI agent that researches topics, summarizes findings, and creates concise reports.</textarea>
+<label>AI model</label><select><option>Nova Reasoning Pro</option><option>Nova Fast</option><option>Nova Balanced</option></select>
+<h2 class="mt">Instructions</h2><label>System instructions</label><textarea class="large">You are a professional research assistant. Analyze information carefully, cite important sources, explain complex ideas clearly, and organize findings into concise sections.</textarea>
+<div class="row"><div><label>Temperature</label><input type="range" min="0" max="100" value="35"></div><div><label>Response style</label><select><option>Detailed</option><option>Concise</option><option>Creative</option></select></div></div>
+</section>
+<aside class="panel preview">
+<div class="preview-head"><b>Agent preview</b><span>Live</span></div>
+<div class="agent-card"><div class="big-icon">✦</div><h2 id="previewName">Research Assistant</h2><p id="previewDesc">An AI agent that researches topics, summarizes findings, and creates concise reports.</p><div class="tags"><span>Research</span><span>Summarization</span><span>Analysis</span></div></div>
+<h3>Capabilities</h3><label class="check"><input type="checkbox" checked> Web research</label><label class="check"><input type="checkbox" checked> Document analysis</label><label class="check"><input type="checkbox"> Send email</label><label class="check"><input type="checkbox" checked> Generate reports</label>
+<button id="test" class="test">▶ Test agent</button>
+</aside>
+</div>
+</main><div id="toast"></div><script src="script.js"></script></body></html>

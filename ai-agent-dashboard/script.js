@@ -1,0 +1,1 @@
+document.getElementById("refresh").onclick=function(){this.textContent="✓ Updated";setTimeout(()=>this.textContent="↻ Refresh",1200);document.getElementById("running").textContent=String(28+Math.floor(Math.random()*5));};

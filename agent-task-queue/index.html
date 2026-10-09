@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Agent Task Queue</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand">⌁ TaskPilot</div><nav><a class="active">Tasks</a><a>Agents</a><a>History</a></nav><button class="primary">＋ New task</button></header>
+<main><div class="heading"><div><h1>Agent task queue</h1><p>Manage and monitor tasks across your AI agents.</p></div><div class="search"><span>⌕</span><input id="search" placeholder="Search tasks..."></div></div>
+<div class="tabs"><button class="active" data-filter="all">All <b>24</b></button><button data-filter="running">Running <b>6</b></button><button data-filter="pending">Pending <b>11</b></button><button data-filter="done">Completed <b>7</b></button></div>
+<section class="table">
+<div class="thead"><span>Task</span><span>Agent</span><span>Priority</span><span>Status</span><span>Updated</span><span></span></div>
+<div class="task" data-status="running"><div><b>Analyze Q3 customer feedback</b><small>Research and summarize customer insights</small></div><span class="agent"><i class="purple">✦</i> Research Agent</span><span class="priority high">High</span><span class="status running">● Running</span><span class="time">2 min ago</span><button>•••</button></div>
+<div class="task" data-status="pending"><div><b>Generate weekly newsletter</b><small>Create content from selected updates</small></div><span class="agent"><i class="orange">✎</i> Content Agent</span><span class="priority medium">Medium</span><span class="status pending">● Pending</span><span class="time">8 min ago</span><button>•••</button></div>
+<div class="task" data-status="done"><div><b>Qualify new leads</b><small>Score incoming sales leads</small></div><span class="agent"><i class="blue">↗</i> Sales Agent</span><span class="priority low">Low</span><span class="status done">● Completed</span><span class="time">24 min ago</span><button>•••</button></div>
+<div class="task" data-status="pending"><div><b>Review support tickets</b><small>Classify tickets by urgency</small></div><span class="agent"><i class="green">◈</i> Support Agent</span><span class="priority high">High</span><span class="status pending">● Pending</span><span class="time">31 min ago</span><button>•••</button></div>
+<div class="task" data-status="done"><div><b>Prepare competitor report</b><small>Compare product features and pricing</small></div><span class="agent"><i class="purple">✦</i> Research Agent</span><span class="priority medium">Medium</span><span class="status done">● Completed</span><span class="time">1 hr ago</span><button>•••</button></div>
+</section>
+<div class="footer">Showing <b id="shown">5</b> tasks <button id="clear">Clear completed</button></div>
+</main><script src="script.js"></script></body></html>
