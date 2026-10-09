@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Personal Finance Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<div class="topbar"><div><span class="eyebrow">FINANCE HUB</span><h1>Personal Finance</h1></div><button class="ghost" id="themeBtn">☾ Theme</button></div>
+<section class="hero"><div><p class="muted">Good evening, Alex</p><h2>Your money, clearly organized.</h2><p class="muted">A responsive overview of your monthly financial health.</p></div><button class="primary" id="addIncome">+ Add income</button></section>
+<section class="stats">
+<div class="card stat"><span>Net balance</span><strong id="balance">$12,840</strong><small class="up">+8.4% this month</small></div>
+<div class="card stat"><span>Income</span><strong>$8,450</strong><small class="up">+5.2%</small></div>
+<div class="card stat"><span>Expenses</span><strong>$4,280</strong><small class="down">-2.1%</small></div>
+<div class="card stat"><span>Savings rate</span><strong>49.3%</strong><small class="up">Excellent</small></div>
+</section>
+<div class="grid two"><section class="card"><div class="section-head"><h3>Cash flow</h3><select id="range"><option>Last 6 months</option><option>This year</option></select></div><div class="bars" id="bars"></div><div class="legend"><span><i class="income"></i>Income</span><span><i class="expense"></i>Expenses</span></div></section>
+<section class="card"><div class="section-head"><h3>Budget health</h3><span class="pill">October</span></div><div class="budget"><div><span>Housing</span><b>72%</b></div><div class="track"><i style="width:72%"></i></div></div><div class="budget"><div><span>Food & dining</span><b>48%</b></div><div class="track"><i style="width:48%"></i></div></div><div class="budget"><div><span>Transport</span><b>31%</b></div><div class="track"><i style="width:31%"></i></div></div><div class="budget"><div><span>Entertainment</span><b>64%</b></div><div class="track"><i style="width:64%"></i></div></div></section></div>
+<section class="card"><div class="section-head"><h3>Recent transactions</h3><button class="link" id="filterBtn">Show expenses</button></div><div class="transactions" id="transactions"></div></section>
+</main><script src="script.js"></script></body></html>

@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Expense Tracker</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<div class="topbar"><div><span class="eyebrow">MONEYFLOW</span><h1>Expense Tracker</h1></div><button class="ghost" id="clearBtn">Reset demo</button></div>
+<section class="card form-card"><div><p class="muted">October spending</p><h2 id="total">$1,846.20</h2><span class="pill">62% of $3,000 budget</span></div><form id="expenseForm"><input id="name" placeholder="Expense name" required><input id="amount" type="number" step=".01" placeholder="Amount" required><select id="category"><option>Food</option><option>Transport</option><option>Shopping</option><option>Bills</option><option>Health</option></select><button class="primary">Add expense</button></form></section>
+<div class="grid two"><section class="card"><div class="section-head"><h3>Spending by category</h3></div><div id="categories" class="category-list"></div></section><section class="card"><div class="section-head"><h3>Daily trend</h3><span class="muted">Last 7 days</span></div><div class="line-chart"><svg viewBox="0 0 500 180" preserveAspectRatio="none"><polyline id="line" fill="none" points="0,140 80,100 160,120 240,65 320,92 400,45 500,72"/></svg></div></section></div>
+<section class="card"><div class="section-head"><h3>Transactions</h3><span class="muted">Click an item to remove it</span></div><div id="expenseList"></div></section>
+</main><script src="script.js"></script></body></html>
